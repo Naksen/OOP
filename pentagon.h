@@ -8,11 +8,11 @@ class Pentagon : public Figure {
 public:
     Pentagon();
     Pentagon(Point v1,Point v2,Point v3,Point v4,Point v5);
-    Pentagon(std::istream &is);
+    explicit Pentagon(std::istream &is);
     Pentagon(Pentagon &other);
 
-    void Print();
-    double Square();
+    void Print() override;
+    double Area();
 
     ~Pentagon();
 private:

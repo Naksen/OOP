@@ -13,8 +13,8 @@ public:
     friend std::istream& operator>>(std::istream& is, Point& p);
     friend std::ostream& operator<<(std::ostream& os, Point& p);
 
-private:
     double x_;
     double y_;
+
 };
 #endif

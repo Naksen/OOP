@@ -10,7 +10,15 @@
 point.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/point.h
 
+/mnt/d/CProgramms/sem_3/OOP/lab1/main.cpp
+iostream
+-
+pentagon.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
+
 /mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp
+cmath
+-
 pentagon.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
 
@@ -18,6 +26,12 @@ pentagon.h
 figure.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
 iostream
+-
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/point.cpp
+point.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/point.h
+cmath
 -
 
 /mnt/d/CProgramms/sem_3/OOP/lab1/point.h

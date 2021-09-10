@@ -1,3 +1,4 @@
+#include <cmath>
 #include "pentagon.h"
 
 Pentagon::Pentagon(): v1(0,0),v2(0,0),v3(0,0),v4(0,0),v5(0,0){
@@ -29,6 +30,22 @@ Pentagon::~Pentagon() {
     std::cout << "Object Pentagon ";
     Print();
     std::cout << "deleted" << std::endl;
+}
+
+double Pentagon::Area() {
+    Point ar[5];
+    ar[0] = v1;
+    ar[1] = v2;
+    ar[2] = v3;
+    ar[3] = v4;
+    ar[4] = v5;
+    double res = 0;
+    for (unsigned i = 0; i < 5; i++) {
+        Point p = i ? ar[i-1] : ar[4];
+        Point q = ar[i];
+        res += (p.x_ - q.x_) * (p.y_ + q.y_);
+    }
+    return fabs(res) / 2;
 }
 
 
