@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OOP_lab_1.dir/main.cpp.o CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o  -o OOP_lab_1 

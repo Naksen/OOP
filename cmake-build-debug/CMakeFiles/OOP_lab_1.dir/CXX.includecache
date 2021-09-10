@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/main.cpp
+iostream
+-
+pentagon.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp
+pentagon.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
+figure.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
+iostream
+-
+
