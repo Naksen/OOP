@@ -2,6 +2,7 @@
 #define OOP_LAB_1_PENTAGON_H
 
 #include "figure.h"
+
 #include <iostream>
 
 class Pentagon : public Figure {
@@ -12,7 +13,7 @@ public:
     Pentagon(Pentagon &other);
 
     void Print() override;
-    double Area();
+    double Area() override;
 
     ~Pentagon();
 private:

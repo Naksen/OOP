@@ -123,6 +123,33 @@ OOP_lab_1/fast:
 	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/build
 .PHONY : OOP_lab_1/fast
 
+hexagon.o: hexagon.cpp.o
+
+.PHONY : hexagon.o
+
+# target to build an object file
+hexagon.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/hexagon.cpp.o
+.PHONY : hexagon.cpp.o
+
+hexagon.i: hexagon.cpp.i
+
+.PHONY : hexagon.i
+
+# target to preprocess a source file
+hexagon.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/hexagon.cpp.i
+.PHONY : hexagon.cpp.i
+
+hexagon.s: hexagon.cpp.s
+
+.PHONY : hexagon.s
+
+# target to generate assembly for a file
+hexagon.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/hexagon.cpp.s
+.PHONY : hexagon.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -149,6 +176,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+octagon.o: octagon.cpp.o
+
+.PHONY : octagon.o
+
+# target to build an object file
+octagon.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/octagon.cpp.o
+.PHONY : octagon.cpp.o
+
+octagon.i: octagon.cpp.i
+
+.PHONY : octagon.i
+
+# target to preprocess a source file
+octagon.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/octagon.cpp.i
+.PHONY : octagon.cpp.i
+
+octagon.s: octagon.cpp.s
+
+.PHONY : octagon.s
+
+# target to generate assembly for a file
+octagon.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/octagon.cpp.s
+.PHONY : octagon.cpp.s
 
 pentagon.o: pentagon.cpp.o
 
@@ -213,9 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OOP_lab_1"
+	@echo "... hexagon.o"
+	@echo "... hexagon.i"
+	@echo "... hexagon.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... octagon.o"
+	@echo "... octagon.i"
+	@echo "... octagon.s"
 	@echo "... pentagon.o"
 	@echo "... pentagon.i"
 	@echo "... pentagon.s"

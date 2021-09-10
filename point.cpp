@@ -25,3 +25,11 @@ std::ostream& operator<<(std::ostream& os, Point& p) {
     os << "(" << p.x_ << ", " << p.y_ << ") ";
     return os;
 }
+
+double getx(Point& p) {
+    return p.x_;
+}
+
+double gety(Point& p) {
+    return p.y_;
+}

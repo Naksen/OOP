@@ -85,7 +85,19 @@
 		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/figure.h">
 			<Option target="OOP_lab_1"/>
 		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/hexagon.cpp">
+			<Option target="OOP_lab_1"/>
+		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/hexagon.h">
+			<Option target="OOP_lab_1"/>
+		</Unit>
 		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/main.cpp">
+			<Option target="OOP_lab_1"/>
+		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/octagon.cpp">
+			<Option target="OOP_lab_1"/>
+		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/octagon.h">
 			<Option target="OOP_lab_1"/>
 		</Unit>
 		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp">

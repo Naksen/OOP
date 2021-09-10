@@ -43,7 +43,7 @@ double Pentagon::Area() {
     for (unsigned i = 0; i < 5; i++) {
         Point p = i ? ar[i-1] : ar[4];
         Point q = ar[i];
-        res += (p.x_ - q.x_) * (p.y_ + q.y_);
+        res += (getx(p) - getx(q)) * (gety(p) + gety(q));
     }
     return fabs(res) / 2;
 }

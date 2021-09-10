@@ -9,12 +9,15 @@ public:
     Point(double x, double y);
 
     double dist(Point& other);
+    friend double getx(Point& p);
+    friend double gety(Point& p);
 
     friend std::istream& operator>>(std::istream& is, Point& p);
     friend std::ostream& operator<<(std::ostream& os, Point& p);
 
-    double x_;
-    double y_;
+private:
+    double x_{};
+    double y_{};
 
 };
 #endif
