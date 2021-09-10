@@ -2,14 +2,15 @@
 #include "pentagon.h"
 int main() {
 
-    Pentagon p;
-    p.Print();
+    Pentagon p1;
+    p1.Print();
 
-    Pentagon a({3,4},{5,6},{7,8},{9,10},{12,13});
-    a.Print();
+    Point a(0,0),b(0,2),c(1,3),d(2,3),e(3,0);
+    Pentagon p2(a,b,c,d,e);
+    p2.Print();
 
-    Pentagon b(std::cin);
-    b.Print();
+    Pentagon p3(std::cin);
+    p3.Print();
 
     return 0;
 }

@@ -177,6 +177,33 @@ pentagon.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/pentagon.cpp.s
 .PHONY : pentagon.cpp.s
 
+point.o: point.cpp.o
+
+.PHONY : point.o
+
+# target to build an object file
+point.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/point.cpp.o
+.PHONY : point.cpp.o
+
+point.i: point.cpp.i
+
+.PHONY : point.i
+
+# target to preprocess a source file
+point.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/point.cpp.i
+.PHONY : point.cpp.i
+
+point.s: point.cpp.s
+
+.PHONY : point.s
+
+# target to generate assembly for a file
+point.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_lab_1.dir/build.make CMakeFiles/OOP_lab_1.dir/point.cpp.s
+.PHONY : point.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... pentagon.o"
 	@echo "... pentagon.i"
 	@echo "... pentagon.s"
+	@echo "... point.o"
+	@echo "... point.i"
+	@echo "... point.s"
 .PHONY : help
 
 

@@ -7,12 +7,8 @@
 #IncludeRegexTransform: 
 
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
-
-/mnt/d/CProgramms/sem_3/OOP/lab1/main.cpp
-iostream
--
-pentagon.h
-/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
+point.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/point.h
 
 /mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp
 pentagon.h
@@ -21,6 +17,10 @@ pentagon.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
 figure.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
+iostream
+-
+
+/mnt/d/CProgramms/sem_3/OOP/lab1/point.h
 iostream
 -
 

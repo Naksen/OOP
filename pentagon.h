@@ -4,11 +4,6 @@
 #include "figure.h"
 #include <iostream>
 
-struct Point{
-    double x = 0;
-    double y = 0;
-};
-
 class Pentagon : public Figure {
 public:
     Pentagon();

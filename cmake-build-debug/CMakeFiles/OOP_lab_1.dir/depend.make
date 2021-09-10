@@ -4,8 +4,13 @@
 CMakeFiles/OOP_lab_1.dir/main.cpp.o: ../figure.h
 CMakeFiles/OOP_lab_1.dir/main.cpp.o: ../main.cpp
 CMakeFiles/OOP_lab_1.dir/main.cpp.o: ../pentagon.h
+CMakeFiles/OOP_lab_1.dir/main.cpp.o: ../point.h
 
 CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o: ../figure.h
 CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o: ../pentagon.cpp
 CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o: ../pentagon.h
+CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o: ../point.h
+
+CMakeFiles/OOP_lab_1.dir/point.cpp.o: ../point.cpp
+CMakeFiles/OOP_lab_1.dir/point.cpp.o: ../point.h
 

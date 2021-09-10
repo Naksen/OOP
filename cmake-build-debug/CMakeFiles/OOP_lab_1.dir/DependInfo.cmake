@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/d/CProgramms/sem_3/OOP/lab1/main.cpp" "/mnt/d/CProgramms/sem_3/OOP/lab1/cmake-build-debug/CMakeFiles/OOP_lab_1.dir/main.cpp.o"
   "/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp" "/mnt/d/CProgramms/sem_3/OOP/lab1/cmake-build-debug/CMakeFiles/OOP_lab_1.dir/pentagon.cpp.o"
+  "/mnt/d/CProgramms/sem_3/OOP/lab1/point.cpp" "/mnt/d/CProgramms/sem_3/OOP/lab1/cmake-build-debug/CMakeFiles/OOP_lab_1.dir/point.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

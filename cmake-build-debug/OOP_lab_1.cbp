@@ -94,6 +94,12 @@
 		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h">
 			<Option target="OOP_lab_1"/>
 		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/point.cpp">
+			<Option target="OOP_lab_1"/>
+		</Unit>
+		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/point.h">
+			<Option target="OOP_lab_1"/>
+		</Unit>
 		<Unit filename="/mnt/d/CProgramms/sem_3/OOP/lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
