@@ -23,13 +23,13 @@ Hexagon::Hexagon(std::istream &is) {
     std::cout << "Hexagon created via istream" << std::endl;
 }
 
-void Hexagon::Print() {
-    std::cout << "Hexagon:" << v1 << v2 << v3 << v4 << v5 << v6 << "\n";
+void Hexagon::Print(std::ostream& os) {
+    os << "Hexagon:" << v1 << v2 << v3 << v4 << v5 << v6 << "\n";
 }
 
 Hexagon::~Hexagon() {
     std::cout << "Object hexagon ";
-    Print();
+    Print(std::cout);
     std::cout << "deleted" << std::endl;
 }
 
@@ -48,5 +48,9 @@ double Hexagon::Area() {
         res += (getx(p) - getx(q)) * (gety(p) + gety(q));
     }
     return fabs(res) / 2;
+}
+
+size_t Hexagon::VertexesNumber() {
+    return 6;
 }
 

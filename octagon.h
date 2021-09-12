@@ -11,8 +11,9 @@ public:
     explicit Octagon(std::istream &is);
     Octagon(Octagon &other);
 
-    void Print() override;
+    void Print(std::ostream& os) override;
     double Area() override;
+    size_t VertexesNumber() override;
 
     ~Octagon();
 private:

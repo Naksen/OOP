@@ -10,12 +10,6 @@
 point.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/point.h
 
-/mnt/d/CProgramms/sem_3/OOP/lab1/hexagon.cpp
-hexagon.h
-/mnt/d/CProgramms/sem_3/OOP/lab1/hexagon.h
-cmath
--
-
 /mnt/d/CProgramms/sem_3/OOP/lab1/hexagon.h
 figure.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
@@ -32,27 +26,17 @@ hexagon.h
 octagon.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/octagon.h
 
-/mnt/d/CProgramms/sem_3/OOP/lab1/octagon.cpp
-cmath
--
-octagon.h
-/mnt/d/CProgramms/sem_3/OOP/lab1/octagon.h
-
 /mnt/d/CProgramms/sem_3/OOP/lab1/octagon.h
 figure.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
 iostream
 -
 
-/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.cpp
-cmath
--
-pentagon.h
-/mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
-
 /mnt/d/CProgramms/sem_3/OOP/lab1/pentagon.h
 figure.h
 /mnt/d/CProgramms/sem_3/OOP/lab1/figure.h
+point.h
+/mnt/d/CProgramms/sem_3/OOP/lab1/point.h
 iostream
 -
 

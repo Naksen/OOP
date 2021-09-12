@@ -16,8 +16,8 @@ public:
     friend std::ostream& operator<<(std::ostream& os, Point& p);
 
 private:
-    double x_{};
-    double y_{};
+    double x_;
+    double y_;
 
 };
 #endif

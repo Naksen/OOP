@@ -22,13 +22,13 @@ Pentagon::Pentagon(std::istream &is) {
     std::cout << "Pentagon created via istream" << std::endl;
 }
 
-void Pentagon::Print() {
-    std::cout << "Pentagon:" << v1 << v2 << v3 << v4 << v5 << "\n";
+void Pentagon::Print(std::ostream& os) {
+    os << "Pentagon:" << v1 << v2 << v3 << v4 << v5 << "\n";
 }
 
 Pentagon::~Pentagon() {
     std::cout << "Object Pentagon ";
-    Print();
+    Print(std::cout);
     std::cout << "deleted" << std::endl;
 }
 
@@ -47,5 +47,11 @@ double Pentagon::Area() {
     }
     return fabs(res) / 2;
 }
+
+size_t Pentagon::VertexesNumber() {
+    return 5;
+}
+
+
 
 

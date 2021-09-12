@@ -23,13 +23,13 @@ Octagon::Octagon(std::istream &is) {
     std::cout << "Octagon created via istream" << std::endl;
 }
 
-void Octagon::Print() {
-    std::cout << "Octagon:" << v1 << v2 << v3 << v4 << v5 << v6 << v7 << v8 << "\n";
+void Octagon::Print(std::ostream& os) {
+    os << "Octagon:" << v1 << v2 << v3 << v4 << v5 << v6 << v7 << v8 << "\n";
 }
 
 Octagon::~Octagon() {
     std::cout << "Object octagon ";
-    Print();
+    Print(std::cout);
     std::cout << "deleted" << std::endl;
 }
 
@@ -50,4 +50,8 @@ double Octagon::Area() {
         res += (getx(p) - getx(q)) * (gety(p) + gety(q));
     }
     return fabs(res) / 2;
+}
+
+size_t Octagon::VertexesNumber() {
+    return 8;
 }

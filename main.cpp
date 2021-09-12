@@ -4,22 +4,31 @@
 #include "octagon.h"
 int main() {
 
-    Pentagon p1;
-    p1.Print();
-    std::cout << "Area is " << p1.Area() << "\n";
+    //Pentagon:
+    Pentagon p(std::cin);
+    p.Print(std::cout);
+    std::cout << "Area is " << p.Area() << "\n";
+    std::cout << "Number of vertexes is " << p.VertexesNumber() << "\n";
 
-    Point a(0,0),b(0,2),c(1,3),d(2,3),e(3,0);
-    Pentagon p2(a,b,c,d,e);
-    p2.Print();
-    std::cout << "Area is " << p2.Area() << "\n";
+    //Hexagon:
+    Hexagon h(std::cin);
+    h.Print(std::cout);
+    std::cout << "Area is " << h.Area() << "\n";
+    std::cout << "Number of vertexes is " << h.VertexesNumber() << "\n";
 
-    Pentagon p3(std::cin);
-    p3.Print();
+    //Octagon:
+    Octagon o(std::cin);
+    o.Print(std::cout);
+    std::cout << "Area is " << o.Area() << "\n";
+    std::cout << "Number of vertexes is " << o.VertexesNumber() << "\n";
 
     return 0;
 }
-/* 2 3
-   4 5
-   10 23
-   3 5
-   1 2 */
+/* Test's:
+Pentagon (Area = 7):
+0 0 0 2 1 3 2 3 3 0
+Hexagon (Area = 36):
+0 0 0 3 2 6 5 6 7 3 7 0
+Octagon (Area = 104):
+0 0 0 4 4 8 6 10 8 10 10 8 14 4 14 0
+*/

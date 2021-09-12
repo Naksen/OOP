@@ -2,7 +2,7 @@
 #define OOP_LAB_1_PENTAGON_H
 
 #include "figure.h"
-
+#include "point.h"
 #include <iostream>
 
 class Pentagon : public Figure {
@@ -12,8 +12,9 @@ public:
     explicit Pentagon(std::istream &is);
     Pentagon(Pentagon &other);
 
-    void Print() override;
+    void Print(std::ostream& os) override;
     double Area() override;
+    size_t VertexesNumber() override;
 
     ~Pentagon();
 private:

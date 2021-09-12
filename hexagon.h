@@ -12,8 +12,9 @@ public:
     explicit Hexagon(std::istream &is);
     Hexagon(Hexagon &other);
 
-    void Print() override;
+    void Print(std::ostream& os) override;
     double Area() override;
+    size_t VertexesNumber() override;
 
     ~Hexagon();
 private:
