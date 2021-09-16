@@ -1,0 +1,16 @@
+{
+  "variant": 22,
+  "figures": [
+    "Pentagon",
+    "Hexagon",
+    "Octagon"
+  ],
+  "containers": [
+    "TNaryTree",
+    "TNaryTree"
+  ],
+  "finished_labs": {
+    "lab1": "lab1",
+    "lab2": "your_lab2_folder_name"
+  }
+}
