@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/figure.h
+point.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/point.h
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/main.cpp
+iostream
+-
+pentagon.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/pentagon.h
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/pentagon.cpp
+cmath
+-
+pentagon.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/pentagon.h
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/pentagon.h
+figure.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/figure.h
+point.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/point.h
+iostream
+-
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/point.cpp
+point.h
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/point.h
+cmath
+-
+
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/point.h
+istream
+-
+
