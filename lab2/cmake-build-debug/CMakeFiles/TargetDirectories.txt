@@ -1,0 +1,3 @@
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/CProgramms/sem_3/OOP/oop_labs/lab2/cmake-build-debug/CMakeFiles/lab2.dir
