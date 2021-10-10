@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab3.dir/main.cpp.o CMakeFiles/lab3.dir/node.cpp.o CMakeFiles/lab3.dir/pentagon.cpp.o CMakeFiles/lab3.dir/tnary_tree.cpp.o CMakeFiles/lab3.dir/point.cpp.o  -o lab3 
