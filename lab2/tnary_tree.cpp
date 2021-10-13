@@ -6,7 +6,7 @@ TNaryTree::TNaryTree(int n) {
     root = nullptr;
 }
 
-void TNaryTree::Update(Pentagon &&pentagon, std::string &&tree_path) {
+void TNaryTree::Update(const Pentagon &&pentagon, const std::string &&tree_path) {
     if (tree_path == "") {
         if (root == nullptr) {
             set_root(pentagon);
@@ -57,7 +57,7 @@ Node *TNaryTree::get_root() {
     return root;
 }
 
-void TNaryTree::set_root(Pentagon &pentagon) {
+void TNaryTree::set_root(const Pentagon &pentagon) {
     root = new Node(pentagon);
 }
 
@@ -83,10 +83,10 @@ bool TNaryTree::Empty() {
     else return false;
 }
 
-void TNaryTree::Clear(std::string &&tree_path) {
+void TNaryTree::RemoveSubTree(const std::string &&tree_path) {
     Node* cur;
     if (tree_path == "") {
-        sub_clear(root);
+        sub_remove(root);
     } else {
         cur = get_root();
         for (int i = 0; i < tree_path.size() - 1; ++i) {
@@ -106,28 +106,28 @@ void TNaryTree::Clear(std::string &&tree_path) {
         if (tree_path[tree_path.size() - 1] == 'c') {
             Node* cur_d = cur->son;
             cur->son = nullptr;
-            sub_clear(cur_d);
+            sub_remove(cur_d);
         }
         if (tree_path[tree_path.size() - 1] == 'b') {
             Node* cur_d = cur->brother;
             cur->brother = nullptr;
-            sub_clear(cur_d);
+            sub_remove(cur_d);
         }
     }
 }
 
-void TNaryTree::sub_clear(Node* cur) {
+void TNaryTree::sub_remove(Node* cur) {
     if (cur->son != nullptr) {
-        sub_clear(cur->son);
+        sub_remove(cur->son);
     }
     if (cur->brother != nullptr) {
-        sub_clear(cur->brother);
+        sub_remove(cur->brother);
     }
     delete(cur);
     return;
 }
 
-double TNaryTree::Area(std::string &&tree_path) {
+double TNaryTree::Area(const std::string &&tree_path) {
     double sum = 0;
     Node* cur;
     if (tree_path == "") {
@@ -169,7 +169,7 @@ void TNaryTree::sub_area(Node* cur,double& sum) {
 }
 
 TNaryTree::~TNaryTree() {
-    sub_clear(root);
+    sub_remove(root);
 }
 
 TNaryTree::TNaryTree(const TNaryTree& other) {
@@ -215,6 +215,35 @@ void TNaryTree::sub_print_operator(Node* cur, std::ostream& os) const{
         //os << "]";
     }
     return;
+}
+
+Pentagon& TNaryTree::GetItem(const std::string &&tree_path) {
+    Node* cur;
+    if (tree_path == "") {
+        return root->key;
+    } else {
+        cur = get_root();
+        for (int i = 0; i < tree_path.size() - 1; ++i) {
+
+            if (tree_path[i] == 'c') {
+
+                cur = cur->son;
+
+            }
+            if (tree_path[i] == 'b') {
+
+                cur = cur->brother;
+
+            }
+
+        }
+        if (tree_path[tree_path.size() - 1] == 'c') {
+            return cur->son->key;
+        }
+        if (tree_path[tree_path.size() - 1] == 'b') {
+            return cur->brother->key;
+        }
+    }
 }
 
 

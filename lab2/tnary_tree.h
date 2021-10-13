@@ -6,18 +6,19 @@ public:
     TNaryTree(int n);
     TNaryTree(const TNaryTree& other);
     void sub_copy(Node*& cur,Node* cp);
-    void Update(Pentagon &&pentagon, std::string &&tree_path="");
+    void Update(const Pentagon &&pentagon, const std::string &&tree_path="");
     Node* get_root();
-    void set_root(Pentagon &pentagon);
+    void set_root(const Pentagon &pentagon);
     void Print(std::ostream& os) const;
     void sub_print(Node* cur,std::ostream &os) const;
-    void Clear(std::string &&tree_path);
-    void sub_clear(Node* cur);
+    void RemoveSubTree(const std::string &&tree_path);
+    void sub_remove(Node* cur);
     bool Empty();
-    double Area(std::string &&tree_path);
+    double Area(const std::string &&tree_path);
     void sub_area(Node* cur,double& sum);
     friend std::ostream& operator<<(std::ostream& os, const TNaryTree& tree);
     void sub_print_operator(Node* cur, std::ostream &os) const;
+    Pentagon& GetItem(const std::string &&tree_path="");
     virtual ~TNaryTree();
 private:
     int N;

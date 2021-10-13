@@ -1,7 +1,7 @@
 #include "node.h"
 
 
-Node::Node(Pentagon &pentagon) {
+Node::Node(const Pentagon &pentagon) {
     key = pentagon;
     son = nullptr;
     brother = nullptr;

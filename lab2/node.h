@@ -4,7 +4,7 @@
 class Node {
 public:
     Node();
-    Node(Pentagon &pentagon);
+    Node(const Pentagon &pentagon);
 
     Node* last_son();
     void Print(std::ostream &os);
