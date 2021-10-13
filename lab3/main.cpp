@@ -15,7 +15,7 @@ int main() {
     std::cout << "___________________________________________\n";
     t.Update(Pentagon({0,0},{0,0},{0,0},{0,0},{0,0}),"");
 
-    t.Clear("cbb");
+    t.RemoveSubTree("cbb");
     t.Print(std::cout);
     std::cout << "___________________________________________\n";
 
