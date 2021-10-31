@@ -6,6 +6,11 @@ TNaryTree::TNaryTree(int n) {
   root = nullptr;
 }
 
+TNaryTree::TNaryTree() {
+  N = 3;
+  root = nullptr;
+}
+
 void TNaryTree::Update(const Pentagon &&pentagon, const std::string &&tree_path) {
   if (tree_path == "") {
     if (root == nullptr) {

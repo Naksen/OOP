@@ -5,6 +5,7 @@
 
 class TNaryTree {
  public:
+  TNaryTree();
   TNaryTree(int n);
   TNaryTree(const TNaryTree &other);
   void Update(const Pentagon &&pentagon, const std::string &&tree_path = "");
