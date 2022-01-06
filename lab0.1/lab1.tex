@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{multicol,multirow}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{minted}
+
+\usepackage{color} %% это для отображения цвета в коде
+\usepackage{listings} %% собственно, это и есть пакет listings
+
+\lstset{ %
+language=C++,                 % выбор языка для подсветки (здесь это С++)
+basicstyle=\small\sffamily, % размер и начертание шрифта для подсветки кода
+numbers=left,               % где поставить нумерацию строк (слева\справа)
+%numberstyle=\tiny,           % размер шрифта для номеров строк
+stepnumber=1,                   % размер шага между двумя номерами строк
+numbersep=5pt,                % как далеко отстоят номера строк от подсвечиваемого кода
+backgroundcolor=\color{white}, % цвет фона подсветки - используем \usepackage{color}
+showspaces=false,            % показывать или нет пробелы специальными отступами
+showstringspaces=false,      % показывать или нет пробелы в строках
+showtabs=false,             % показывать или нет табуляцию в строках
+frame=single,              % рисовать рамку вокруг кода
+tabsize=2,                 % размер табуляции по умолчанию равен 2 пробелам
+captionpos=t,              % позиция заголовка вверху [t] или внизу [b] 
+breaklines=true,           % автоматически переносить строки (да\нет)
+breakatwhitespace=false, % переносить строки только если есть пробел
+escapeinside={\%*}{*)}   % если нужно добавить комментарии в коде
+}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РОССИЙСКОЙ ФЕДЕРАЦИИ
+\medskip
+МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ
+(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСТИТЕТ)
+\vfill\vfill
+{\Huge ЛАБОРАТОРНАЯ РАБОТА №1} \\
+по курсу объектно-ориентированное программирование
+I семестр, 2021/22 уч. год}
+\end{center}
+\vfill
+
+Студент \uline{\it {Ханнанов Руслан Маратович, группа М8О-208Б-20}\hfill}
+
+Преподаватель \uline{\it {Дорохов Евгений Павлович}\hfill}
+
+\vfill
+\end{titlepage}
+
+\subsection*{Условие}
+Создать класс комплексного числа в тригонометрической форме. Обязательно должны присутствовать операции сложения, вычитания, умножения, деления, сравнения и сопряженное число. Реализовать операции сравнения по действительной части. Исходный код лежит в файле main.cpp.
+Исходный код лежит в трёх файлах:
+\pagebreak
+\subsection*{Протокол работы}
+3 60 \\
+2 15 \\
+Complex num in trigonometric form: 3*(cos60 + i * sin60) \\
+Complex num in trigonometric form: 2*(cos15 + i * sin15) \\
+\\
+Сложение: Complex num in trigonometric form: 4.39362*(cos-185.045 + i * sin-185.045) \\
+\\
+Вычитание: Complex num in trigonometric form: 2.58769*(cos-121.102 + i * sin-121.102) \\
+\\
+Умножение: Complex num in trigonometric form: 6*(cos75 + i * sin75) \\
+\\
+Деление: Complex num in trigonometric form: 1.5*(cos45 + i * sin45) \\
+\\
+Проверка на равенство: 0 \\
+Сопряженное число: Complex num in trigonometric form: 3*(cos-60 + i * sin-60) \\
+\\
+Проверка на равенство по действительной части: 0 \\
+\subsection*{Дневник отладки}
+Проблем и ошибок при написании данной работы не возникло.
+
+\subsection*{Недочёты}
+
+
+\subsection*{Выводы}
+В процессе выполнения данной лабораторной работы, я смог применить начальные знания о классах, реализовал простой класс тригонометрического числа. Мне кажется, что классы удобны для вынесения некоторых абстрактных обьектов в структуру с определенным набором полей и методов. Это позволяет сделать код компактнее и более понятным для стороннего наблюдателя.
+
+
+\vfill
+\pagebreak
+\subsection*{Исходный код:}
+
+{\Huge main.cpp}
+\inputminted
+    {C++}{main.cpp}
+    
+\end{document}
