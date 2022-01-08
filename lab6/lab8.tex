@@ -1,0 +1,163 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{multicol,multirow}
+\usepackage{tabularx}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{minted}
+
+\usepackage{color} %% это для отображения цвета в коде
+\usepackage{listings} %% собственно, это и есть пакет listings
+
+\lstset{ %
+language=C++,                 % выбор языка для подсветки (здесь это С++)
+basicstyle=\small\sffamily, % размер и начертание шрифта для подсветки кода
+numbers=left,               % где поставить нумерацию строк (слева\справа)
+%numberstyle=\tiny,           % размер шрифта для номеров строк
+stepnumber=1,                   % размер шага между двумя номерами строк
+numbersep=5pt,                % как далеко отстоят номера строк от подсвечиваемого кода
+backgroundcolor=\color{white}, % цвет фона подсветки - используем \usepackage{color}
+showspaces=false,            % показывать или нет пробелы специальными отступами
+showstringspaces=false,      % показывать или нет пробелы в строках
+showtabs=false,             % показывать или нет табуляцию в строках
+frame=single,              % рисовать рамку вокруг кода
+tabsize=2,                 % размер табуляции по умолчанию равен 2 пробелам
+captionpos=t,              % позиция заголовка вверху [t] или внизу [b] 
+breaklines=true,           % автоматически переносить строки (да\нет)
+breakatwhitespace=false, % переносить строки только если есть пробел
+escapeinside={\%*}{*)}   % если нужно добавить комментарии в коде
+}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ РОССИЙСКОЙ ФЕДЕРАЦИИ
+\medskip
+МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ
+(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСТИТЕТ)
+\vfill\vfill
+{\Huge ЛАБОРАТОРНАЯ РАБОТА №8} \\
+по курсу объектно-ориентированное программирование
+I семестр, 2021/22 уч. год}
+\end{center}
+\vfill
+
+Студент \uline{\it {Ханнанов Руслан Маратович, группа М8О-208Б-20}\hfill}
+
+Преподаватель \uline{\it {Дорохов Евгений Павлович}\hfill}
+
+\vfill
+\end{titlepage}
+
+\subsection*{Условие}
+
+Задание: \
+Вариант 22: Используя структуру данных, разработанную для лабораторной работы №5, спроектировать и 
+разработать аллокатор памяти для динамической структуры данных.
+Цель построения аллокатора – минимизация вызова операции malloc. Аллокатор должен 
+выделять большие блоки памяти для хранения фигур и при создании новых фигур-объектов 
+выделять место под объекты в этой памяти.
+Алокатор должен хранить списки использованных/свободных блоков. Для хранения списка 
+свободных блоков нужно применять динамическую структуру данных (контейнер 2-го уровня, 
+согласно варианту задания).
+Для вызова аллокатора должны быть переопределены оператор new и delete у классов-фигур.
+
+\subsection*{Описание программы}
+
+Исходный код лежит в 14 файлах:
+\begin{enumerate}
+\item src/main.cpp: основная программа, взаимодействие с пользователем посредством комманд из меню
+
+\item include/figure.h:    описание абстрактного класса фигур
+
+\item include/point.h:     описание класса точки
+\item include/node.h:  описание класса ноды дерева
+\item include/pentagon.h: описание класса пятиугольника, наследующегося от figures
+\item include/tnary\_tree.h:    описание класса N-дерева
+\item include/iterator.h:    описание класса итератора
+\item include/list\_item.h:    описание класса элемента списка
+\item include/tallocator.h:    описание класса аллокатора
+\item include/tlinked\_list.h:    описание класса связного списка
+
+\item include/point.cpp:     реализация класса точки
+\item include/pentagon.cpp:  реализация класса пятиугольника, наследующегося от figures
+\item include/node.cpp: реализация класса ноды дерева
+\item include/tnary\_tree.cpp:    реализация класса N-дерева
+
+\end{enumerate}
+
+\subsection*{Дневник отладки}
+Были трудности с реализацией аллокатора.
+
+\subsection*{Недочёты}
+Недочетов не обнаружено.
+
+\subsection*{Выводы}
+В процессе выполнения данной лабораторной работы я познакомился с понятием аллокатора. Аллокаторы - очень важная часть любой структуры данных, поэтому, как мне кажется, знакомство с ней необходимо каждому программисту.
+
+
+\vfill
+
+\subsection*{Исходный код:}
+
+{\Huge iterator.h}
+\inputminted
+    {C++}{iterator.h}
+
+{\Huge figure.h}
+\inputminted
+    {C++}{figure.h}
+    
+{\Huge point.h}
+\inputminted
+    {C++}{point.h}
+    
+{\Huge point.cpp}
+\inputminted
+    {C++}{point.cpp}
+
+{\Huge pentagon.h}
+\inputminted
+    {C++}{pentagon.h}
+    
+{\Huge pentagon.cpp}
+\inputminted
+    {C++}{pentagon.cpp}
+
+{\Huge node.h}
+\inputminted
+    {C++}{node.h}
+    
+{\Huge node.cpp}
+\inputminted
+    {C++}{node.cpp}
+
+{\Huge tnary\_tree.h}
+\inputminted
+    {C++}{tnary_tree.h}
+    
+{\Huge tnary\_tree.cpp}
+\inputminted
+    {C++}{tnary_tree.cpp}
+    
+{\Huge list\_item.h}
+\inputminted
+    {C++}{list_item.h}
+    
+{\Huge tlinked\_list.h}
+\inputminted
+    {C++}{tlinked_list.h}
+    
+{\Huge tallocator.h}
+\inputminted
+    {C++}{tallocator.h}
+
+{\Huge main.cpp}
+\inputminted
+    {C++}{main.cpp}
+    \pagebreak
+    
+\end{document}
